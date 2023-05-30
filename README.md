@@ -1,2 +1,2 @@
-# yamdb_final
-yamdb_final
+## Статус workflow
+[![workflow](https://github.com/emplYooo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)](https://github.com/emplYooo/yamdb_final/actions/workflows/yamdb_workflow.yml)

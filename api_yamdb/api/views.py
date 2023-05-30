@@ -9,7 +9,6 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 
-
 from api.filters import TitleFilter
 from reviews.models import Category, Genre, Review, Title, User
 

@@ -5,7 +5,8 @@
 Благодарные или возмущённые читатели оставляют к произведениям текстовые отзывы (Review) и выставляют произведению рейтинг.
 
 ## Статус workflow
-![Yamdb Workflow Status](https://github.com/emplYooo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
+
+![Yamdb Workflow Status](https://github.com/emplYooo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # Ресурсы API YaMDb
 **AUTH**: аутентификация.

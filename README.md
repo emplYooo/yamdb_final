@@ -5,7 +5,7 @@
 Благодарные или возмущённые читатели оставляют к произведениям текстовые отзывы (Review) и выставляют произведению рейтинг.
 
 ## Статус workflow
-[![workflow](https://github.com/emplYooo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)](https://github.com/emplYooo/yamdb_final/actions/workflows/yamdb_workflow.yml)
+![Yamdb Workflow Status](https://github.com/emplYooo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 
 # Ресурсы API YaMDb
 **AUTH**: аутентификация.
@@ -51,13 +51,13 @@ git clone git@github.com:emplYooo/yamdb_final.git
 ```
 #### 2.Создать .env файл внутри директории infra (на одном уровне с docker-compose.yaml) Пример .env файла:
 ```
-SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
-DB_ENGINE=django.db.backends.postgresql
-DB_NAME=postgres
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
-DB_HOST=db
-DB_PORT=5432
+SECRET_KEY - секретный ключ Django;
+DB_ENGINE - движок базы данных (БД) postgresql: `django.db.backends.postgresql`;
+DB_NAME - имя БД: `postgres`;
+POSTGRES_USER - пользователь БД: `postgres`;
+POSTGRES_PASSWORD - пароль рользователя БД: `postgres`;
+DB_HOST - адрес удалённого сервера БД, по умолчанию: `db`;
+DB_PORT - порт сервера базы данных: `5432`;
 
 ```
 #### 3. Запуск тестов (опционально, если не нужно - переходите к следующему шагу)
@@ -89,7 +89,13 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 docker-compose exec web python manage.py collectstatic --no-input 
 ```
-### Документация
+### 5.Документация:
 ```
-http://localhost/redoc/
+http://158.160.52.136/redoc/
+
+```
+### 6.Админка:
+```
+http://158.160.52.136/admin/
+
 ```
